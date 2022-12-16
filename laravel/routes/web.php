@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\vote_controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('newmain');
-});
+Route::get('/', [vote_controller::class, 'vote']);
+Route::get('/nextbody', [vote_controller::class, 'vote2']);
 
-Route::get('/body', function () {
-    $age = 23;
-    $nationality = "Indian";
-    return view('body', compact('age'));
-});
+
+
+// Route::get('/body', function () {
+//     $age = 23;
+//     $nationality = "Indian";
+//     return view('body', compact('age'));
+// });

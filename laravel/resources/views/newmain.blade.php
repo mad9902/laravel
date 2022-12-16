@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>GSLC WEBPROG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body>
@@ -11,11 +11,16 @@
 
     @include("header")
 
-    <a style="margin-left: 90vh" href="body">Are you eligible for voting?</a>
+    <div style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/852/804/small/abstract-blue-background-simple-design-for-your-website-free-vector.jpg)">
 
-    <div class="contain">
+    </div>
 
-        @yield("contain")
+    <div class="konten">
+
+        @yield("konten")
+
+
+    @include('footer')
 
     </div>
   </body>
